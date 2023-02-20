@@ -1,0 +1,113 @@
+<div class="wrapper">
+  <button class="e-btn" style="margin: 5px;" (click)="btnClick()">Delete Image</button>  
+  <ejs-spreadsheet #spreadsheet (created)="onCreate()" [height]="500">
+    <e-sheets>
+      <e-sheet [showGridLines]="false">
+        <e-rows>
+            <e-row index='1' [height]='30'>
+                <e-cells>
+                    <e-cell index='1' value='Mark Spencer'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row [height]='40'>
+                <e-cells>
+                    <!-- <e-cell index="1" [image]="images"></e-cell> -->
+                    <e-cell index='2' value='Id'></e-cell>
+                    <e-cell value=': 1001' ></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Gender'></e-cell>
+                    <e-cell value=': Male'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Contact Preference'></e-cell>
+                    <e-cell value=': Email'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Email'></e-cell>
+                    <e-cell value=': mark@gmail.com'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Date of Birth'></e-cell>
+                    <e-cell value=': Jan 3, 1985'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Department'></e-cell>
+                    <e-cell value=': IT'></e-cell>
+                </e-cells>
+            </e-row>
+             <e-row [height]='40'>
+                <e-cells>
+                    <e-cell index='2' value='IsActive' [style]="{verticalAlign:'top'}"></e-cell>
+                    <e-cell value=': True' [style]="{verticalAlign:'top'}"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row index='10' [height]='30'>
+                <e-cells>
+                    <e-cell index='1' value='Mary Ellen Mark'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row [height]='40'>
+                <e-cells>
+                    <!-- <e-cell index="1" [image]="images"></e-cell> -->
+                    <e-cell index="2" value='Id'></e-cell>
+                    <e-cell value=': 1002'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Gender'></e-cell>
+                    <e-cell value=': Female'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Contact Preference'></e-cell>
+                    <e-cell value=': Phone'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Email'></e-cell>
+                    <e-cell value=': mary@gmail.com'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Date of Birth'></e-cell>
+                    <e-cell value=': Dec 8, 1989'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell index='2' value='Department'></e-cell>
+                    <e-cell value=': HR'></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row [height]='40'>
+                <e-cells>
+                    <e-cell index='2' value='IsActive' [style]="{verticalAlign:'top'}"></e-cell>
+                    <e-cell value=': True' [style]="{verticalAlign:'top'}"></e-cell>
+                </e-cells>
+            </e-row> 
+        </e-rows>
+        <e-columns>
+          <e-column [width]='20'></e-column>
+          <e-column [width]='280'></e-column>
+          <e-column [width]='172'></e-column>
+          <e-column [width]='160'></e-column>
+        </e-columns>
+      </e-sheet>
+    </e-sheets>
+  </ejs-spreadsheet>
+</div>
